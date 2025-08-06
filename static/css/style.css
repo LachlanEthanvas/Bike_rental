@@ -1,0 +1,315 @@
+
+    body {
+      background: black;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    /* background video */
+    #background-video {
+      height: 100vh;
+     width: 100%;
+      object-fit: cover;
+      position: relative;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      z-index: -1;
+    }
+
+    .navbar {
+      display: flex;
+      flex-wrap: nowrap;
+      width: 500px;
+      background: black;
+      justify-content: flex-start;
+    }
+
+    
+    .navbar a {
+      float: left;
+      padding: 12px;
+      color: rgb(245, 245, 245);
+
+      font-family: 'Times New Roman', Times, serif;
+      text-decoration: none;
+      font-size: 17px;
+      width: 25%;
+     
+      text-align: center;
+     
+    }
+
+ 
+    .navbar a:hover {
+      background-color: rgba(244, 153, 8, 0.999);
+      color: white;
+      border: 1px solid black;
+      border-radius: 6px;
+      font-size: 24px;
+    }
+
+   
+    .navbar a.active {}
+
+    .oop {
+      opacity: 0.9;
+    }
+    .fonts {
+
+        font-weight: bold;
+        position: absolute;
+        top: 270px;
+        left: 90px;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      }
+  
+      .fonts h2 {
+        font-size: 50px;
+        color: rgba(244, 153, 8, 0.999);
+      }
+  
+      .fonts span {
+        color: rgba(244, 153, 8, 0.999);
+      }
+  
+      .text h4 {
+        color: white;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  
+      }
+  
+      .text {
+        text-align: center;
+      }
+  
+      .mid {
+        margin-top: 25px;
+        
+      }
+  
+      .flex-container {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+  
+      }
+      .flex-container6 {
+        display: flex;
+        flex-wrap: nowrap;
+        
+        background: rgb(0, 0, 0);
+  
+      }
+      .flex-container3 {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-around;
+        
+  
+      }
+      .flex-container7 {
+        display: flex;
+        flex-wrap: nowrap;
+        
+  
+      }
+      .flex-child7 {
+        background-color: black;
+        border: 5px solid black;
+        padding:10px ;
+        font-size: 40px;
+        text-align: center;
+        border: 1px solid red;
+      }
+      .flex-child7:hover{
+        background: orange;
+      }
+      .flex-child3 {
+        background-color: black;
+        border: 5px solid black;
+       
+        font-size: 40px;
+        text-align: center;
+      }
+  
+      .flex-container2 {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-around;
+  
+      }
+      .flex-container4 {
+        display: flex;
+        flex-wrap: nowrap;
+       justify-content: space-around;
+  
+      }
+  
+      .flex-child {
+        background-color: black;
+        border: 5px solid black;
+        padding: 50px;
+        font-size: 40px;
+        text-align: center;
+      }
+      .flex-child6 {
+        background-color: black;
+        border: 5px solid black;
+        
+        font-size: 40px;
+        text-align:left;
+        
+      }
+      .flex-child66 {
+        background-color: black;
+        border: 5px solid black;
+        background: rgb(0, 0, 0);
+        font-size: 20px;
+        text-align:left;
+        margin-left: 20px;
+        margin-top: 20px;
+        color: white;
+        
+      }
+      .flex-child6 p{
+        color: white;
+        font-size: 20px;
+        background:  rgba(244, 153, 8, 0.999);
+        margin-top: 10px;
+        padding: 20px;
+        border-radius: 10px;
+        font-family: 'Times New Roman', Times, serif;
+      }
+      .flex-child6 h2{
+        color: white;
+        font-family: 'Times New Roman', Times, serif;
+      }
+      .flex-child4 {
+        background-color: black;
+        border: 5px solid black;
+        
+        font-size: 40px;
+        
+      }
+      .flex-child2{
+        background-color: rgba(244, 153, 8, 0.999);
+        border: 5px solid black;
+        padding: 50px;
+        font-size: 40px;
+        text-align: center;
+      }
+      .flex-child11{
+        background-color: rgba(0, 0, 0, 0.999);
+        border: 5px solid black;
+        
+        font-size: 40px;
+        text-align: center;
+      }
+      
+  
+      .name {
+        color: white;
+        font-size: 25px;
+      }
+  
+      .refer {
+        color: rgba(144, 141, 141, 0.709);
+        font-size: 18px;
+      }
+      h4{
+        font-size: 50px;
+        color: rgb(255, 255, 255);
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-weight: bold;
+      }
+      .flex-child11 p{
+        font-size: 17px;
+        color: rgb(255, 255, 255);
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        margin-top: 20px;
+      }
+      .fowi{
+        color: white;
+      }
+      .change{
+        text-align: start;
+      }
+      .dd{
+            background: rgb(0, 0, 0);
+            text-align: center;
+            height: 220px;
+            width:auto;
+            color: white !important;
+          }
+      .dd a{
+        text-decoration: none;
+        color: grey;
+      }
+      .dd a:hover{
+        color: white;
+      } 
+      #about{
+        justify-content: space-around;
+        margin-top: 45px;
+        color: white;
+        font-size: 20px;
+        font-family: 'Times New Roman', Times, serif;
+      }   
+      .btnn{
+        background:  rgba(0, 0, 0, 0.999);
+        color: white;
+        border: 1px solid black;
+      }
+      .btnn:hover{
+        background:  rgba(244, 153, 8, 0.999);
+        padding: 6px;
+      }
+      .flip-box {
+    background-color: transparent;
+    width: 400px;
+    height: 300px;
+    border: 1px solid black;
+    perspective: 1000px; 
+  }
+  
+  
+  .flip-box-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+  
+  
+  .flip-box:hover .flip-box-inner {
+    transform: rotateY(180deg);
+  }
+  
+  .flip-box-front, .flip-box-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; 
+    backface-visibility: hidden;
+  }
+  
+  .flip-box-front {
+    background-color: #bbb;
+    color: black;
+  }
+  
+  
+  .flip-box-back {
+    background-color:  rgba(244, 153, 8, 0.999);
+    color: white;
+    transform: rotateY(180deg);
+    font-family: 'Times New Roman', Times, serif;
+  }
+      

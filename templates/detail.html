@@ -1,0 +1,101 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+<body>
+    <div class="container mt-5 text-light">
+    
+        <div class="row">
+            <div class="col-md-6">
+                <!-- Bike Image -->
+                <img src="{{ specification.bike.image.url }}" alt="{{ specification.bike.name }}" class="img-fluid">
+            </div>
+            <div class="col-md-6">
+                <!-- Bike Details -->
+                <h2>{{ specification.bike.name }}</h2>
+                <p>Company: {{ specification.bike.company }}</p>
+                <p>Model: {{ specification.bike.model }}</p>
+                <p>Cost: ${{ specification.bike.cost }}</p>
+                <p>Colour: {{ specification.bike.colour }}</p>
+                <!-- Specifications Table -->
+                <h3>Specifications:</h3>
+                <table class="table">
+                    <tbody>
+                        <tr>
+                            <td>Bike Type:</td>
+                            <td>{{ specification.bike_type }}</td>
+                        </tr>
+                        <tr>
+                            <td>Displacement:</td>
+                            <td>{{ specification.displacement }} cc</td>
+                        </tr>
+                        <tr>
+                            <td>Max Power:</td>
+                            <td>{{ specification.max_power }} bhp</td>
+                        </tr>
+                        <tr>
+                            <td>Max Torque:</td>
+                            <td>{{ specification.max_torque }} Nm</td>
+                        </tr>
+                        <tr>
+                            <td>Mileage (Owner Reported):</td>
+                            <td>{{ specification.mileage_owner_reported }} kmpl</td>
+                        </tr>
+                        <tr>
+                            <td>Transmission Type:</td>
+                            <td>{{ specification.transmission_type }}</td>
+                        </tr>
+                        <tr>
+                            <td>Transmission Gear Count:</td>
+                            <td>{{ specification.transmission_gear_count }}</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <!-- Rent Now Button -->
+                <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Rent Now</a>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Send an Enquiry</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form method="POST" id='contactform'>
+            {% csrf_token %}
+                <div class="row">
+                    <div class="col">
+                      <input type="text" id="name" name="name" class="form-control" placeholder="Name" aria-label="name">
+                    </div>
+                    <div class="col">
+                      <input type="number" id="ph" name="ph"  class="form-control" placeholder="Ph no." aria-label="name">
+                    </div>
+                </div>
+                <div class="mb-3">
+
+                  <input type="email" id="email" name="email" placeholder="Email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                  <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                </div>
+    
+                  <div class="mb-3">
+                    <label for="exampleFormControlTextarea1" class="form-label">Message</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1"  name="message" id="message" rows="3"></textarea>
+                  </div>
+                
+                <button type="submit" class="btn btn-primary">Submit</button>
+              </form>
+ 
+        </div>
+  
+      </div>
+    </div>
+  </div>
+
+{% endblock content %}
