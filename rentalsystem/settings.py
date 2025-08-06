@@ -56,6 +56,7 @@ INSTALLED_APPS = [
     'website',
 ]
 
+
 MIDDLEWARE = [
     'whitenoise.middleware.WhiteNoiseMiddleware',  # Added for serving static files
     "django.middleware.security.SecurityMiddleware",
