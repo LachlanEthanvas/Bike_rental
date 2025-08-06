@@ -1,0 +1,43 @@
+.card {
+    width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.card img {
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+.card p {
+    margin-bottom: 10px;
+    color: white;
+}
+.add-button {
+    background-color: orange; /* orange*/
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.add-button:hover {
+    background-color:rgb(255, 183, 50);
+}
+
+.flex-container1 {
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: space-between;
+
+  }
+  /*----->body<-------*/  
+  body{
+    background-color: black;
+  }
